@@ -25,4 +25,12 @@ public class TrexController : MonoBehaviour
     {
         trexRigid.AddForce(Vector3.up * jumpHeight);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Hurdle")
+        {
+            Debug.Log("Game Over!");
+        }
+    }
 }

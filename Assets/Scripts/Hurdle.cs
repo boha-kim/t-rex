@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 
-public class Tile : MonoBehaviour
+public class Hurdle : MonoBehaviour
 {
     [SerializeField, Range(0, 1)] private float flowSpeed;
 
-    public BackgroundController backgroundController;
+    public HurdleController hurdleController;
 
     private void FixedUpdate()
     {
